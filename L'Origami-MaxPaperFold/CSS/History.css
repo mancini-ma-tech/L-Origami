@@ -1,29 +1,56 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* CSS Variables */
+:root {
+  --primary-color: #333;
+  --secondary-color: #04aa6d;
+  --hover-color: #ddd;
+  --text-color: #f2f2f2;
+  --background-color: #787575;
+  --button-bg-color: #2a065281;
+  --button-hover-bg-color: #0eaa3a;
+  --container-bg-color: #504a4a37;
+  --font-family-primary: "Montserrat", sans-serif;
+  --font-family-secondary: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --header-bg-color: #444;
+  --header-text-color: #fff;
+  --link-color: #04aa6d;
+  --link-hover-color: #037a50;
+}
+
+body {
+  font-family: var(--font-family-secondary);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
 .topnav {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-family-primary);
   overflow: hidden;
-  background-color: #333;
+  background-color: var(--primary-color);
 }
 
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: var(--text-color);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .topnav a:hover {
-  cursor: pointer;
-  transition-behavior: smooth;
-  transition-duration: 1.3s;
-  background-color: #ddd;
+  background-color: var(--hover-color);
   color: black;
 }
+
 .topnav a.active {
-  background-color: #04aa6d;
+  background-color: var(--secondary-color);
   color: white;
 }
 
@@ -52,109 +79,103 @@
     text-align: left;
   }
 }
+
 header {
-  animation: ease-in-out;
-  background-color: #787575;
-  color: white;
+  background-color: var(--header-bg-color);
+  color: var(--header-text-color);
   text-align: center;
-  padding: 1px;
+  padding: 20px;
+  font-size: 24px;
+  font-family: var(--font-family-primary);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
 .socialStructure {
   font-weight: bold;
 }
-h1 {
+
+h1, h2 {
+  font-family: var(--font-family-primary);
   text-align: center;
-  font-family: "Montserrat", sans-serif;
-  font-size: 35px;
-  color: rgb(0, 0, 0);
-}
-h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 25px;
   color: black;
 }
+
+h1 {
+  font-size: 35px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
 p {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+  font-family: var(--font-family-secondary);
   font-size: 18px;
   color: black;
+  line-height: 1.6;
 }
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}
+
 button {
   color: white;
   appearance: none;
   border-radius: 8px;
   outline: none;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  background-color: #2a065281;
+  background-color: var(--button-bg-color);
   padding: 14px 20px;
   margin-left: 37.5%;
   border: none;
   width: 25%;
-  transition-duration: 1.2s;
-  text-decoration: none;
-}
-button:hover {
-  background-color: #0eaa3a;
-  cursor: pointer;
-  transition-behavior: smooth;
-  transition-duration: 1.2s;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
-.origin {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  display: flexbox;
+button:hover {
+  background-color: var(--button-hover-bg-color);
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.container {
+  font-family: var(--font-family-secondary);
+  display: flex;
   flex-direction: column;
-  align-items: left;
-  margin-left: 1%;
-  margin-right: 5%;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  align-items: flex-start;
+  margin: 3% 5%;
   padding: 20px;
   width: 80%;
-  background-color: #504a4a37;
+  background-color: var(--container-bg-color);
   border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-.heian {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  display: flexbox;
-  flex-direction: column;
-  align-items: right;
-  margin-right: 1%;
-  margin-left: 5%;
-  margin-top: 3%;
-  margin-bottom: 3%;
-  padding: 20px;
-  width: 80%;
-  background-color: #504a4a37;
-  border-radius: 10px;
-}
-.edo {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  display: flexbox;
-  flex-direction: column;
-  align-items: left;
-  margin-right: 5%;
-  margin-left: 1%;
-  margin-top: 3%;
-  margin-bottom: 3%;
-  padding: 20px;
-  width: 80%;
-  background-color: #504a4a37;
-  border-radius: 10px;
-}
-.modern {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  display: flexbox;
-  flex-direction: column;
-  align-items: left;
-  margin-right: 1%;
-  margin-left: 5%;
-  margin-top: 3%;
-  margin-bottom: 3%;
-  padding: 20px;
-  width: 80%;
-  background-color: #504a4a37;
-  border-radius: 10px;
-}
+
 .imgRadius {
   border-radius: 15px;
+}
+
+/* Specific styles for origin, heian, edo, modern classes */
+.origin, .heian, .edo, .modern {
+  margin: 3% 5%;
+  padding: 20px;
+  width: 80%;
+  background-color: var(--container-bg-color);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.origin, .edo, .modern {
+  align-items: flex-start;
+}
+
+.heian {
+  align-items: flex-end;
 }
