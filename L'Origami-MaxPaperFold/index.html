@@ -7,79 +7,91 @@
     <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
     <link
       rel="stylesheet"
-      href="../L'Origami MaxPaperFold/CSS/main-style.css"
+      href="../L'Origami-MaxPaperFold/CSS/main-style.css"
     />
     <link
       rel="stylesheet"
-      href="../L'Origami MaxPaperFold/CSS/introAnimation.css"
+      href="../L'Origami-MaxPaperFold/CSS/introAnimation.css"
     />
-    <script src="../L'Origami MaxPaperFold/JavaScript/introAnimation.js"></script>
+    <script src="../L'Origami-MaxPaperFold/JavaScript/introAnimation.js"></script>
   </head>
   <body>
     <header>
-      <h1>L'Origami: MaxPaperFold</h1>
-      <p id="titolo">マッシミリアーノ・マンチーニ</p>
-      <nav class="topnav">
-        <a class="active" href="../HTML/index.html">Home</a>
-        <a href="../Gallery/PublicGallery.html">Galleria degli Origami</a>
-        <a href="../HTML/La Storia.html">La Storia dell'Origami</a>
-        <a href="../HTML/Le Pieghe.html">Le Pieghe</a>
-        <a class="login" href="../SignIn-SignUp/login.html">Area Personale</a>
-      </nav>
+      <div class="container"></div>
+        <h1>L'Origami: MaxPaperFold</h1>
+        <p id="titolo">マッシミリアーノ・マンチーニ</p>
+        <nav class="topnav">
+          <a class="active" href="../HTML/index.html">Home</a>
+          <a href="../Gallery/PublicGallery.html">Galleria degli Origami</a>
+          <a href="../HTML/La Storia.html">La Storia dell'Origami</a>
+          <a href="../HTML/Le Pieghe.html">Le Pieghe</a>
+          <a class="login" href="../SignIn-SignUp/login.html">Area Personale</a>
+        </nav>
+      </div>
     </header>
     <main>
       <section id="introAnimation"></section>
-      <section>
-        <h2>Chi sono?</h2>
-        <p>
-          Benvenuti nel mio sito, sono Massimiliano Mancini e questa è una
-          semplice ma dettagliata guida sull'Arte dell'Origami. All'interno,
-          troverete la storia, la pratica ed una galleria.
-        </p>
-        <img
-          class="Dragon"
-          src="../images/Origami Dragon (2 Ver.).jpg"
-          alt="Drago Origami"
-        />
+      <section class="about">
+        <div class="container">
+          <h2>Chi sono?</h2>
+          <p>
+            Benvenuti nel mio sito, sono Massimiliano Mancini e questa è una
+            semplice ma dettagliata guida sull'Arte dell'Origami. All'interno,
+            troverete la storia, la pratica ed una galleria.
+          </p>
+          <img
+            class="Dragon"
+            src="../images/Origami Dragon (2 Ver.).jpg"
+            alt="Drago Origami"
+          />
+        </div>
       </section>
-      <section>
-        <h2>Perchè ho creato questo sito?</h2>
-        <p>
-          La risposta è semplice: mi piace l'Origami. E' un'arte che mi ha
-          sempre affascinato, e che ho sempre voluto imparare, ed ora che l'ho
-          imparata, tramandare la sua storia e le sue origini.
-        </p>
+      <section class="purpose">
+        <div class="container">
+          <h2>Perchè ho creato questo sito?</h2>
+          <p>
+            La risposta è semplice: mi piace l'Origami. E' un'arte che mi ha
+            sempre affascinato, e che ho sempre voluto imparare, ed ora che l'ho
+            imparata, tramandare la sua storia e le sue origini.
+          </p>
+        </div>
       </section>
-      <section>
-        <h2>Introduzione all'Origami</h2>
-        <p>
-          Riassunto dell'Origami: L'Origami è un'arte giapponese che consiste nel
-          piegare la carta per creare figure decorative. La tecnica moderna
-          utilizza un numero limitato di piegature combinate in modi infiniti per
-          realizzare modelli anche complessi. Tradizionalmente, l'Origami partiva
-          da un foglio quadrato, senza tagli, mentre oggi si accettano anche forme
-          e tagli differenti. Alla base dell'Origami ci sono i principi
-          shintoisti: il ciclo vitale e l'accettazione della morte. La forma di
-          carta, come un tempio shintoista ricostruito ogni 20 anni, rappresenta
-          la bellezza nella trasformazione e nella rinascita. La morte del
-          supporto non è la fine, ma un passaggio in un ciclo eterno mantenuto
-          vivo dal rispetto delle tradizioni.
-        </p>
+      <section class="introduction">
+        <div class="container">
+          <h2>Introduzione all'Origami</h2>
+          <p>
+            Riassunto dell'Origami: L'Origami è un'arte giapponese che consiste nel
+            piegare la carta per creare figure decorative. La tecnica moderna
+            utilizza un numero limitato di piegature combinate in modi infiniti per
+            realizzare modelli anche complessi. Tradizionalmente, l'Origami partiva
+            da un foglio quadrato, senza tagli, mentre oggi si accettano anche forme
+            e tagli differenti. Alla base dell'Origami ci sono i principi
+            shintoisti: il ciclo vitale e l'accettazione della morte. La forma di
+            carta, come un tempio shintoista ricostruito ogni 20 anni, rappresenta
+            la bellezza nella trasformazione e nella rinascita. La morte del
+            supporto non è la fine, ma un passaggio in un ciclo eterno mantenuto
+            vivo dal rispetto delle tradizioni.
+          </p>
+        </div>
       </section>
-      <section>
-        <a class="btn" href="https://www.instagram.com/mancini_sk8_ma"
-          >Il mio Instagram</a
-        >
+      <section class="social">
+        <div class="container">
+          <a class="btn" href="https://www.instagram.com/mancini_sk8_ma"
+            >Il mio Instagram</a
+          >
+        </div>
       </section>
     </main>
     <footer>
-      <p>&copy; 2023 Massimiliano Mancini. Tutti i diritti riservati.</p>
-      <div class="social-media">
-        <a href="https://www.instagram.com/mancini_sk8_ma" target="_blank"
-          ><img src="../images/instagram-icon.png" alt="Instagram"
-        /></a>
-        <!-- Add more social media links as needed -->
+      <div class="container">
+        <p>&copy; 2023 Massimiliano Mancini. Tutti i diritti riservati.</p>
+        <div class="social-media">
+          <a href="https://www.instagram.com/mancini_sk8_ma" target="_blank"
+            ><img src="../images/instagram-icon.png" alt="Instagram"
+          /></a>
+          <!-- Add more social media links as needed -->
+        </div>
       </div>
     </footer>
   </body>
-</html></div>
+</html>
