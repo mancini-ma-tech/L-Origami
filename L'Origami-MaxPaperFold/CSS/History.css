@@ -6,7 +6,6 @@
   --secondary-color: #04aa6d;
   --hover-color: #ddd;
   --text-color: #f2f2f2;
-  --background-color: #787575;
   --button-bg-color: #2a065281;
   --button-hover-bg-color: #0eaa3a;
   --container-bg-color: #504a4a37;
@@ -94,7 +93,8 @@ header {
   font-weight: bold;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: var(--font-family-primary);
   text-align: center;
   color: black;
@@ -163,7 +163,10 @@ button:hover {
 }
 
 /* Specific styles for origin, heian, edo, modern classes */
-.origin, .heian, .edo, .modern {
+.origin,
+.heian,
+.edo,
+.modern {
   margin: 3% 5%;
   padding: 20px;
   width: 80%;
@@ -172,7 +175,9 @@ button:hover {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.origin, .edo, .modern {
+.origin,
+.edo,
+.modern {
   align-items: flex-start;
 }
 
