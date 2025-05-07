@@ -1,148 +1,173 @@
+<!DOCTYPE html>
 <html lang="it">
   <head>
-    <link rel="stylesheet" href="../CSS/History.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>La Storia</title>
+    <title>La Storia dell'Origami</title>
+    <link rel="stylesheet" href="../CSS/History.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        color: #333;
+      }
+      header {
+        background-color: #4caf50;
+        color: white;
+        padding: 1rem 0;
+        text-align: center;
+      }
+      .topnav {
+        display: flex;
+        justify-content: center;
+        background-color: #333;
+        padding: 0.5rem 0;
+      }
+      .topnav a {
+        color: white;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        transition: background-color 0.3s;
+      }
+      .topnav a:hover,
+      .topnav a.active {
+        background-color: #4caf50;
+      }
+      hgroup {
+        padding: 1rem;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      article {
+        background: white;
+        margin: 1rem 0;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      article img {
+        max-width: 100%;
+        border-radius: 8px;
+        margin: 1rem 0;
+      }
+      .socialStructure {
+        font-weight: bold;
+        color: #4caf50;
+      }
+      button {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+      #hiddenText {
+        margin-top: 1rem;
+        padding: 0.5rem;
+        background-color: #f1f1f1;
+        border-left: 4px solid #4caf50;
+        border-radius: 4px;
+      }
+    </style>
   </head>
   <body>
-    <header><h1>La Storia</h1></header>
+    <header>
+      <h1>La Storia dell'Origami</h1>
+    </header>
+    <nav class="topnav">
+      <a href="../../index.html">Home</a>
+      <a href="../Gallery/PublicGallery.html">Galleria degli Origami</a>
+      <a class="active" href="../HTML/Storia.html">La Storia dell'Origami</a>
+      <a href="../HTML/Pieghe.html">Le Pieghe</a>
+      <a class="login" href="../SignIn-SignUp/login.html">Area Personale</a>
+    </nav>
     <hgroup>
-      <div class="topnav">
-        <a href="../../index.html">Home</a>
-        <a href="..//Gallery/PublicGallery.html">Galleria degli Origami</a>
-        <a class="active" href="..//HTML/Storia.html">La Storia dell'Origami</a>
-        <a href="..//HTML//Pieghe.html">Le Pieghe</a>
-        <a class="login" href="..//SignIn-SignUp/login.html">Area Personale</a>
-      </div>
+      <!-- Origini -->
       <article class="origin">
         <h2>Le Origini</h2>
         <p>
           L'origine degli origami giapponesi è strettamente legata alla
-          religione shintoista e la valenza sacrale della carta è anche
-          testimoniata dal fatto che in giapponese la parola carta e dei si
-          pronunciano entrambe kami. Le prime forme di origami, dette go-hei,
-          erano costituite da semplici strisce di carta piegate in forme
-          geometriche e, unite ad un filo o ad una bacchetta di Storia legno,
-          utilizzate per delimitare gli spazi sacri. A causa dell'estrema
-          semplicità di queste prime forme di piegatura della carta, alcuni
-          fanno invece risalire l'origine dell'origami all'epoca Muromachi
-          (1392-1573), riconducendola alle cerimonie del dono augurale del
-          noshi-awabi ai samurai: questo particolare mollusco, simbolo
-          dell'immortalità, veniva offerto all'interno di un astuccio di carta,
-          che con il passare del tempo divenne piegato in modo sempre più
-          complesso fino ad acquistare dignità di dono in sé. È uso giapponese
-          donare un origami a forma di gru. Infatti la gru (per i giapponesi) è
-          simbolo di purezza
+          religione shintoista. La parola carta e dei si pronunciano entrambe
+          kami. Le prime forme di origami, dette go-hei, erano semplici strisce
+          di carta piegate in forme geometriche, utilizzate per delimitare gli
+          spazi sacri. Con il tempo, queste pieghe si sono evolute in forme più
+          complesse, come la gru, simbolo di purezza.
         </p>
       </article>
+
+      <!-- Periodo Heian -->
       <article class="heian">
         <h2>Il Periodo Heian</h2>
+        <img
+          class="imgRadius"
+          src="../images/Periodo Heian.jpg"
+          alt="Periodo Heian"
+        />
         <p>
-          <img class="imgRadius" src="../images/Periodo Heian.jpg" />
-          L'origami si afferma durante il periodo Heian (794-1185 d.C.), quando
-          la corte imperiale raggiunge il suo apice di raffinatezza.
-          Inizialmente, la tradizione della bambola fluttuante (Hina-nagashi)
-          vedeva una bambola di carta su una barca di origami lasciata in mare
-          per purificare il male. Successivamente, questa usanza si evolve nella
-          più complessa festa delle bambole (Hinamatsuri), dove la corte
-          imperiale viene ricostruita con origami per simboleggiare la gerarchia
-          sociale. Le bambole di carta, oggi sostituite da vere bambole in
-          stoffa e porcellana, erano disposte su piattaforme in base al loro
-          rango. La bambola dell'<span class="socialStructure">Imperatore</span>
-          e dell'<span class="socialStructure">Imperatrice</span> troneggiano
-          sul gradino più alto, simboleggiando il potere imperiale. Seguono
-          <span class="socialStructure">dame di corte</span>, musicisti,
-          funzionari e oggetti di uso quotidiano, disposti in
-          <span class="socialStructure">ordine gerarchico</span>. La
-          disposizione riflette la rigida struttura sociale della corte
-          imperiale giapponese.
+          Durante il periodo Heian (794-1185 d.C.), l'origami si afferma come
+          simbolo di raffinatezza. La tradizione della bambola fluttuante
+          (Hina-nagashi) evolve nella festa delle bambole (Hinamatsuri), dove
+          origami rappresentano la gerarchia sociale della corte imperiale.
         </p>
         <button onclick="toggleText()">
           L'Origami nelle feste tradizionali giapponesi: simboli e rituali
         </button>
         <p id="hiddenText" style="display: none">
           <span class="socialStructure">Kodomo no hi</span>: Kusudama contro gli
-          spiriti maligni.<span class="socialStructure">Obon</span>: Barchette
+          spiriti maligni. <span class="socialStructure">Obon</span>: Barchette
           di carta per le anime dei defunti.
-          <span class="socialStructure">Shichi-Go-San</span>: Origami come
-          offerte (festa shintoista).
           <span class="socialStructure">Tanabata</span>: Decorazioni per la
-          Festa delle stelle. <span class="socialStructure">Hanami</span>:
-          Lanterne e fiori di carta (Festa dei ciliegi in fiore).<span
-            class="socialStructure"
-            >Loto</span
-          >: Simbolo buddista (Tanabata e Hanami).
+          Festa delle stelle.
         </p>
       </article>
-      <script>
-        function toggleText() {
-          var text = document.getElementById("hiddenText");
-          if (text.style.display === "none") {
-            text.style.display = "block";
-          } else {
-            text.style.display = "none";
-          }
-        }
-      </script>
+
+      <!-- Periodo Edo -->
       <article class="edo">
         <h2>Il Periodo Edo</h2>
+        <img
+          class="imgRadius"
+          src="../images/Periodo Edo.jpg"
+          alt="Periodo Edo"
+        />
         <p>
-          <img class="imgRadius" src="../images/Periodo Edo.jpg" />
-          <span class="socialStructure">Simbolo di immortalità e pace</span>: La
-          gru, perfezionata nel XVIII secolo, rappresenta l'apice dell'origami
-          nell'era Edo. La leggenda narra che piegare mille gru esaudisce i
-          desideri. La storia di Sadako Sasaki, sopravvissuta alla bomba atomica
-          di Hiroshima e morta di leucemia, la rese simbolo di pace.<span
-            class="socialStructure"
-            >Tradizioni e festività</span
-          >: L'origami è parte integrante di diverse festività giapponesi. A
-          Capodanno si realizzano cartoline augurali, buste per il denaro e
-          decorazioni; nel periodo di San Valentino gli astucci per i
-          cioccolatini assumono forme origami.<span class="socialStructure"
-            >Rinascimento moderno</span
-          >: Akira Yoshizawa ha rivitalizzato l'origami con nuovi modelli e
-          tecniche come il wet-folding e il soft-folding. L'origami modulare
-          combina più modelli in un'unica opera decorativa.
-          <span class="socialStructure">Diffusione globale</span>: L'origami ha
-          conquistato un seguito mondiale, con modelli sempre più complessi e
-          nuove tecniche che ne ampliano le possibilità espressive.
+          La gru, perfezionata nel XVIII secolo, diventa simbolo di immortalità
+          e pace. La leggenda narra che piegare mille gru esaudisce i desideri.
+          Akira Yoshizawa ha rivoluzionato l'origami con tecniche come il
+          wet-folding, portandolo a una diffusione globale.
         </p>
       </article>
+
+      <!-- Origami moderno -->
       <article class="modern">
         <h2>L'Origami moderno e l'Occidente</h2>
+        <img class="imgRadius" src="../images/" alt="Origami moderno" />
         <p>
-          <img class="imgRadius" src="../images/" />
-          Già nel XIX secolo, tracce di origami si potevano trovare in Europa,
-          con figure di cavalli e cavalieri risalenti al periodo 1810-1820.
-          Tuttavia, la diffusione su larga scala si deve a due opere
-          fondamentali: Sembazuru Orikata: Un libro giapponese del 1797
-          contenente la tecnica per piegare la gru, divenuta uno dei simboli più
-          iconici dell'origami. Kan no mado: Un'enciclopedia giapponese del 1827
-          che includeva una sezione dedicata all'origami. Queste opere, sebbene
-          non tradotte in lingue occidentali, incuriosirono studiosi e
-          appassionati, gettando le basi per la conoscenza dell'origami in
-          Europa. Nascita e sviluppo dell'origami occidentale: Il primo vero
-          libro sull'origami occidentale fu Fun with Paperfolding di Margaret
-          Murray e Robert Harbin, pubblicato nel 1928. Seguì Paper Magic di
-          Robert Harbin (1957), basato sugli studi di Gershon Legman, che
-          contribuì a codificare le basi teoriche dell'origami. Un ruolo
-          fondamentale nella teorizzazione dell'origami occidentale lo ebbe
-          Josef Albers, padre della teoria moderna dei colori e esponente del
-          minimalismo. Tra il 1920 e il 1930, Albers introdusse l'origami nel
-          suo progetto pedagogico, utilizzando fogli circolari per creare
-          spirali e forme ricurve. Il suo approccio influenzò profondamente gli
-          artisti origami moderni, come Kunihiko Kasahara.
-        </p>
-        <p>
-          Oggi, l'origami si è sviluppato come un'arte autonoma a sé stante, con
-          modelli sempre più complessi e virtuosismi tecnici che ne ampliano le
-          possibilità espressive. La sua influenza si estende ad altri ambiti,
-          contaminando l'arte, il design, la moda e persino la scienza, dove
-          viene utilizzato per creare strutture complesse con applicazioni in
-          ingegneria e biomedicina.
+          L'origami si diffonde in Europa nel XIX secolo grazie a opere come
+          "Sembazuru Orikata" e "Kan no mado". Nel XX secolo, artisti come Josef
+          Albers e Kunihiko Kasahara hanno contribuito a sviluppare l'origami
+          come arte autonoma, influenzando design, moda e scienza.
         </p>
       </article>
     </hgroup>
+    <script>
+      function toggleText() {
+        const text = document.getElementById("hiddenText");
+        text.style.display = text.style.display === "none" ? "block" : "none";
+      }
+    </script>
   </body>
 </html>
