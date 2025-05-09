@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
 
 /* CSS Variables */
 :root {
@@ -6,52 +6,68 @@
   --secondary-color: #04aa6d;
   --hover-color: #ddd;
   --text-color: #f2f2f2;
-  --background-color: #787575;
-  --button-bg-color: #2a065281;
+  --button-bg-color: rgba(42, 6, 82, 0.5);
   --button-hover-bg-color: #0eaa3a;
-  --container-bg-color: #504a4a37;
+  --container-bg-color: rgba(80, 74, 74, 0.22);
   --font-family-primary: "Montserrat", sans-serif;
   --font-family-secondary: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   --header-bg-color: #444;
   --header-text-color: #fff;
   --link-color: #04aa6d;
   --link-hover-color: #037a50;
+  --shadow-light: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.2);
+  --transition-speed: 0.3s;
+  --border-radius: 10px;
+  --max-width: 1200px;
+  --content-padding: 20px;
 }
 
 body {
   font-family: var(--font-family-secondary);
+  line-height: 1.6;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  background-color: var(--background-color);
-  color: var(--text-color);
+  background-color: #f9f9f9;
+  color: var(--primary-color);
+}
+
+header {
+  background-color: var(--secondary-color);
+  color: var(--header-text-color);
+  padding: 1.5rem 0;
+  text-align: center;
+  font-family: var(--font-family-primary);
+  box-shadow: var(--shadow-light);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0 0;
 }
 
 .topnav {
-  font-family: var(--font-family-primary);
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
   background-color: var(--primary-color);
+  padding: 0.5rem 0;
 }
 
 .topnav a {
-  float: left;
-  display: block;
   color: var(--text-color);
-  text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
-  transition: background-color 0.3s, color 0.3s;
+  padding: 0.5rem 1rem;
+  transition: background-color var(--transition-speed);
 }
 
-.topnav a:hover {
-  background-color: var(--hover-color);
-  color: black;
-}
-
+.topnav a:hover,
 .topnav a.active {
   background-color: var(--secondary-color);
-  color: white;
 }
 
 @media screen and (max-width: 600px) {
@@ -62,9 +78,6 @@ body {
     float: right;
     display: block;
   }
-}
-
-@media screen and (max-width: 600px) {
   .topnav.responsive {
     position: relative;
   }
@@ -80,45 +93,35 @@ body {
   }
 }
 
-header {
-  background-color: var(--header-bg-color);
-  color: var(--header-text-color);
-  text-align: center;
-  padding: 20px;
-  font-size: 24px;
-  font-family: var(--font-family-primary);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.socialStructure {
-  font-weight: bold;
-}
-
-h1, h2 {
+h1,
+h2 {
   font-family: var(--font-family-primary);
   text-align: center;
-  color: black;
+  color: var(--primary-color);
 }
 
 h1 {
-  font-size: 35px;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
 }
 
 h2 {
-  font-size: 25px;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 p {
   font-family: var(--font-family-secondary);
-  font-size: 18px;
-  color: black;
-  line-height: 1.6;
+  font-size: 1rem;
+  color: var(--primary-color);
+  line-height: 1.8;
+  margin-bottom: 1rem;
 }
 
 a {
   color: var(--link-color);
   text-decoration: none;
-  transition: color 0.3s;
+  transition: color var(--transition-speed);
 }
 
 a:hover {
@@ -126,22 +129,18 @@ a:hover {
 }
 
 button {
-  color: white;
-  appearance: none;
-  border-radius: 8px;
-  outline: none;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  background-color: var(--button-bg-color);
-  padding: 14px 20px;
-  margin-left: 37.5%;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
   border: none;
-  width: 25%;
-  transition: background-color 0.3s, transform 0.3s;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color var(--transition-speed),
+    transform var(--transition-speed);
 }
 
 button:hover {
   background-color: var(--button-hover-bg-color);
-  cursor: pointer;
   transform: scale(1.05);
 }
 
@@ -150,32 +149,62 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 3% 5%;
-  padding: 20px;
+  margin: 3% auto;
+  padding: var(--content-padding);
   width: 80%;
+  max-width: var(--max-width);
   background-color: var(--container-bg-color);
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-medium);
 }
 
 .imgRadius {
   border-radius: 15px;
 }
 
-/* Specific styles for origin, heian, edo, modern classes */
-.origin, .heian, .edo, .modern {
-  margin: 3% 5%;
-  padding: 20px;
+.section {
+  margin: 3% auto;
+  padding: var(--content-padding);
   width: 80%;
+  max-width: var(--max-width);
   background-color: var(--container-bg-color);
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-medium);
 }
 
-.origin, .edo, .modern {
-  align-items: flex-start;
-}
-
-.heian {
+.section.heian {
   align-items: flex-end;
+}
+
+hgroup {
+  padding: 1rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+article {
+  background: #fff;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-light);
+}
+
+article img {
+  max-width: 100%;
+  border-radius: var(--border-radius);
+  margin: 1rem 0;
+}
+
+.socialStructure {
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+#hiddenText {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: #f1f1f1;
+  border-left: 4px solid var(--secondary-color);
+  border-radius: var(--border-radius);
 }

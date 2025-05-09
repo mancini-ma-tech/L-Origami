@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Storia dell'Origami</title>
+    <link rel="stylesheet" href="../CSS/History.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>La Storia dell'Origami</h1>
+    </header>
+    <nav class="topnav">
+      <a href="../../index.html">Home</a>
+      <a href="../Gallery/PublicGallery.html">Galleria degli Origami</a>
+      <a class="active" href="../HTML/Storia.html">La Storia dell'Origami</a>
+      <a href="../HTML/Pieghe.html">Le Pieghe</a>
+      <a class="login" href="../SignIn-SignUp/login.html">Area Personale</a>
+    </nav>
+    <hgroup>
+      <!-- Origini -->
+      <article class="origin">
+        <h2>Le Origini</h2>
+        <p>
+          L'origine degli origami giapponesi è strettamente legata alla
+          religione shintoista. La parola carta e dei si pronunciano entrambe
+          kami. Le prime forme di origami, dette go-hei, erano semplici strisce
+          di carta piegate in forme geometriche, utilizzate per delimitare gli
+          spazi sacri. Con il tempo, queste pieghe si sono evolute in forme più
+          complesse, come la gru, simbolo di purezza.
+        </p>
+      </article>
+
+      <!-- Periodo Heian -->
+      <article class="heian">
+        <h2>Il Periodo Heian</h2>
+        <img class="imgRadius" src="..//images/Heian.jpg" alt="Periodo Heian" />
+        <p>
+          Durante il periodo Heian (794-1185 d.C.), l'origami si afferma come
+          simbolo di raffinatezza. La tradizione della bambola fluttuante
+          (Hina-nagashi) evolve nella festa delle bambole (Hinamatsuri), dove
+          origami rappresentano la gerarchia sociale della corte imperiale.
+        </p>
+        <button onclick="toggleText()">
+          L'Origami nelle feste tradizionali giapponesi: simboli e rituali
+        </button>
+        <p id="hiddenText" style="display: none">
+          <span class="socialStructure">Kodomo no hi</span>: Kusudama contro gli
+          spiriti maligni. <span class="socialStructure">Obon</span>: Barchette
+          di carta per le anime dei defunti.
+          <span class="socialStructure">Tanabata</span>: Decorazioni per la
+          Festa delle stelle.
+        </p>
+      </article>
+
+      <!-- Periodo Edo -->
+      <article class="edo">
+        <h2>Il Periodo Edo</h2>
+        <img class="imgRadius" src="..//images/Edo.jpg" alt="Periodo Edo" />
+        <p>
+          La gru, perfezionata nel XVIII secolo, diventa simbolo di immortalità
+          e pace. La leggenda narra che piegare mille gru esaudisce i desideri.
+          Akira Yoshizawa ha rivoluzionato l'origami con tecniche come il
+          wet-folding, portandolo a una diffusione globale.
+        </p>
+      </article>
+
+      <!-- Origami moderno -->
+      <article class="modern">
+        <h2>L'Origami moderno e l'Occidente</h2>
+        <img
+          class="imgRadius"
+          src="..//images/Dragon2.jpg"
+          alt="Origami moderno"
+        />
+        <p>
+          L'origami si diffonde in Europa nel XIX secolo grazie a opere come
+          "Sembazuru Orikata" e "Kan no mado". Nel XX secolo, artisti come Josef
+          Albers e Kunihiko Kasahara hanno contribuito a sviluppare l'origami
+          come arte autonoma, influenzando design, moda e scienza.
+        </p>
+      </article>
+    </hgroup>
+    <script>
+      function toggleText() {
+        const text = document.getElementById("hiddenText");
+        text.style.display = text.style.display === "none" ? "block" : "none";
+      }
+    </script>
+  </body>
+</html>
